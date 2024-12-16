@@ -1,6 +1,6 @@
 # Health Insurance Plan Comparison Calculator
 
-A tool to compare health insurance plans and estimate annual costs based on expected medical usage. Try it at **url TK** or run it locally with your own plan data.
+A tool to compare health insurance plans and estimate annual costs based on expected medical usage. Try it at [insurance-comparison.streamlit.app](https://insurance-comparison.streamlit.app) or run it locally with your own plan data.
 
 The hosted app compares a set of low- and medium-cost plans available in the California ACA marketplace for plan year 2025. To use your own plans, see the instructions below.
 
