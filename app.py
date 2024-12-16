@@ -400,14 +400,28 @@ def main():
             
             # Generate cost curve data for each plan
             cost_curve_data = []
+            
+            # Group plans by insurer and sort insurers
+            insurers = {}
             for plan_name, plan in st.session_state.plans.items():
-                medical_costs, out_of_pocket_costs = generate_cost_curve_data(plan)
-                cost_curve_data.extend([{
-                    'Medical Costs': med,
-                    'Out of Pocket': oop,
-                    'Plan': plan_name,
-                    'Insurer': plan.insurer
-                } for med, oop in zip(medical_costs, out_of_pocket_costs)])
+                if plan.insurer not in insurers:
+                    insurers[plan.insurer] = []
+                insurers[plan.insurer].append(plan)
+            
+            # Sort plans within each insurer by premium
+            for insurer in insurers:
+                insurers[insurer].sort(key=lambda x: x.premium)
+            
+            # Generate data in sorted order
+            for insurer in sorted(insurers.keys()):
+                for plan in insurers[insurer]:
+                    medical_costs, out_of_pocket_costs = generate_cost_curve_data(plan)
+                    cost_curve_data.extend([{
+                        'Medical Costs': med,
+                        'Out of Pocket': oop,
+                        'Plan': plan.name,
+                        'Insurer': plan.insurer
+                    } for med, oop in zip(medical_costs, out_of_pocket_costs)])
             
             cost_curve_df = pd.DataFrame(cost_curve_data)
             
