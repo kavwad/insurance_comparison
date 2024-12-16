@@ -424,7 +424,8 @@ def main():
                 xaxis_title="Total Medical Costs (Before Insurance) ($)",
                 yaxis_title="Total Annual Cost (Premium + Out of Pocket) ($)",
                 hovermode='x unified',
-                height=600
+                height=600,
+                legend=dict(orientation="h")
             )
             
             # Format axis labels to show currency
