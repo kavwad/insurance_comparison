@@ -52,7 +52,12 @@ The hosted app compares a set of low- and medium-cost plans available in the Cal
 
 ## Plans.json Schema
 
-You can add or modify the `plans.json` file in the same directory as `app.py` using this structure:
+You can add or modify the `plans.json` file in the same directory as `app.py`.
+
+> [!TIP]
+> Use [**this custom GPT**](https://chatgpt.com/g/g-67607e0805c08191bdd10ae2194d9e8f-insurance-plan-jsonifier) to convert a [Summary of Benefits and Coverage](https://www.healthcare.gov/glossary/summary-of-benefits-and-coverage/) pdf into a json object you can paste straight into `plans.json`.
+
+The `plans.json` file uses this structure:
 
 ```json
 {
