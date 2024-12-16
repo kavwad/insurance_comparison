@@ -422,8 +422,7 @@ def main():
             
             # Update hover template
             fig_curve.update_traces(
-                hovertemplate="%{customdata[0]} %{customdata[1]}<br>Out of pocket: $%{y:,.2f}<extra></extra>",
-                customdata=cost_curve_df[['Insurer', 'Plan']].values
+                hovertemplate="%{data.name}<br>Total cost: $%{y:,.2f}<extra></extra>",
             )
             
             fig_curve.update_layout(
