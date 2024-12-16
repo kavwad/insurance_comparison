@@ -4,6 +4,11 @@ A tool to compare health insurance plans and estimate annual costs based on expe
 
 The hosted app compares a set of low- and medium-cost plans available in the California ACA marketplace for plan year 2025. To use your own plans, see the instructions below.
 
+> [!IMPORTANT]
+> I am not a health care professional, and this app may have bugs! Please double-check plan information and results before making health care decisions.
+
+![screenshot](screenshot.png)
+
 ## Features
 
 - Compare multiple insurance plans side-by-side
