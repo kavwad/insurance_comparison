@@ -236,7 +236,11 @@ def generate_cost_curve_data(plan: InsurancePlan, max_medical_cost: float = 5000
     return medical_costs, total_costs
 
 def main():
-    st.set_page_config(layout="wide")
+    st.set_page_config(
+        page_title="Health Insurance Plan Comparison",
+        page_icon=":hospital:",
+        layout="wide"
+    )
     
     st.title("Health Insurance Plan Comparison")
 
