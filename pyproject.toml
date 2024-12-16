@@ -2,7 +2,7 @@
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12"
 streamlit = "^1.40.2"
 pandas = "^2.2.3"
 plotly = "^5.24.1"
