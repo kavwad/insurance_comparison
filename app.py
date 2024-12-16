@@ -239,6 +239,12 @@ def main():
     st.set_page_config(layout="wide")
     
     st.title("Health Insurance Plan Comparison")
+
+    st.write(
+        """
+        Use the sidebar to build a usage scenario and compare your chosen plans.
+        """
+    )
     
     # Sidebar: Scenario Builder
     st.sidebar.header("Usage Scenario")
