@@ -161,7 +161,3 @@ For the cost curve analysis, medical expenses are distributed across services ba
 - Does not model HSA/FSA contributions
 - Does not account for balance billing
 - Does not model coverage limits or prior authorizations
-
-## License
-
-MIT License - feel free to use and modify for your own purposes.
